@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background: linear-gradient(
+        169.15deg,
+        #0a1830 -6.04%,
+        #0d244c 26%,
+        #16356e 56.98%,
+        #2e57a4 83.53%,
+        #7096db 114.51%
+    ) !important; */
+    background-image: linear-gradient(360deg, #090212 0%, #0902124d 100%);
+    background-color: #090212;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    background-color: #090212;
+}
+
+.HeroBg {
+    background: url('../banner.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.bg-navButton {
+    /* background: linear-gradient(320deg, #3eaf7f 0%, #764eff 105%); */
+    background-color: transparent;
+    background-image: linear-gradient(320deg, #4b6be0 0%, #b32dfd 100%);
+    color: white !important;
+    padding: 8px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+}

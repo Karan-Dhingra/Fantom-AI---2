@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <!-- Tailwindcss -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        background: {
+                            backBody: `linear-gradient(
+                                169.15deg,
+                                #0a1830 - 6.04 %,
+                                #0d244c 26%,
+                                #16356e 56.98%,
+                                #2e57a4 83.53%,
+                                #7096db 114.51%
+                            )`,
+                            navButton: `
+                            linear-gradient(320deg,#3eaf7f 0%,#764eff 105%)
+                            `
+                        }
+                    }
+                }
+            }
+        </script>
+
+        <!-- Additional CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/app.css') }}">
+
+        <title>FANTOM</title>
+    </head>
+
+    <body class="bg-back text-white">
+        <nav
+            class="bg-transparent px-10 gap-x-14 flex items-center py-4 fixed w-full bg-[#09021270] border-b border-b-[#8773CB40] backdrop-blur-md justify-between">
+            <a class="left flex items-center gap-x-3" href="/">
+                <img src="../static/logo.png" alt="" class="w-8">
+                <p class="text-3xl font-semibold"> FANTOM</p>
+            </a>
+            <ul class="list-none flex items-center gap-x-5">
+                <li class="text-lg">
+                    <a class="nav-link active" aria-current="page" href="#HOME">Home</a>
+                </li>
+                <li class="text-lg">
+                    <a class="nav-link active" aria-current="page" href="#ABOUT">About</a>
+                </li>
+                <li class="text-lg">
+                    <a class="nav-link active" aria-current="page" href="#SERVICES">Services</a>
+                </li>
+                </li>
+                <li class="text-lg">
+                    <a class="nav-link active" aria-current="page" href="#CONTACT">Contact</a>
+                </li>
+            </ul>
+            <a href="./emotion" class="text-gray-400 text-lg bg-navButton" href="#">Enter App</a>
+        </nav>
+        <!-- HERO -->
+        <div class="HeroBg flex flex-col justify-center px-14" id="HOME">
+            <h1 class="text-7xl font-bold  w-[700px]">FACIAL EMOTION DETECTION</h1>
+            <p class="text-[#a4c4f7] font-semibold w-[700px] text-lg">A facial recognition system uses biometrics to map
+                facial features from a
+                photograph or video</p>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="px-[100px] my-[100px] pt-[100px]" id="ABOUT">
+            <span class="text-[#b32dfd] font-semibold text-lg">Who we are?</span>
+            <h2 class="font-semibold text-4xl mt-1">ABOUT FANTOM</h2>
+            <p class="text-lg leading-7 mt-3">This is a face detection software that provides fast and accurate
+                features of
+                facial
+                features detection.
+                This will scan all the faces from the image and It will tell you about emotions, gender, race of the
+                person and whether
+                the person is wearing mask or not.This can recognize seven emotions and those are angry, disgusted,
+                fearful, sad, happy,
+                neutral and surprise.
+            </p>
+        </div>
+
+        <!-- HOW IT WORKS! -->
+        <div class="px-[100px] my-[100px] pt-[50px]" id="HOW">
+            <p class="text-[#b32dfd] font-semibold text-lg text-center">HOW IT WORKS</p>
+            <h2 class="font-semibold text-4xl mt-1 text-center">How FANTOM Works</h2>
+            <div class="flex flex-col items-center pt-[30px]">
+                <div class="flex items-center">
+                    <div class='flex w-[310px] items-center flex-col'>
+                        <div
+                            class='bg-[#1a0a30] border-[#8773CB40] border-[2px] rounded-full h-[80px] w-[80px] ml-[20px] mr-[20px] items-center flex-col flex p-[20px]'>
+                            <img src='../static/wallet.svg' alt='' />
+                        </div>
+                        <span class='w-[180px] mt-[10px] text-center'>Choose your Choice</span>
+                    </div>
+                    <img src='../static/line1.svg' alt='' />
+                    <div class='flex w-[310px] items-center flex-col'>
+                        <div
+                            class='bg-[#1a0a30] border-[#8773CB40] border-[2px] rounded-full h-[80px] w-[80px] ml-[20px] mr-[20px] items-center flex-col flex p-[20px]'>
+                            <img src='../static/add.svg' alt='' />
+                        </div>
+                        <span class='w-[180px] mt-[10px] text-center'>Live Video</span>
+                    </div>
+                    <img src='../static/line1.svg' alt='' />
+                    <div class='flex w-[310px] items-center flex-col'>
+                        <div
+                            class='bg-[#1a0a30] border-[#8773CB40] border-[2px] rounded-full h-[80px] w-[80px] ml-[20px] mr-[20px] items-center flex-col flex p-[20px]'>
+                            <img src='../static/collection.svg' alt='' />
+                        </div>
+                        <span class='w-[180px] mt-[10px] text-center'>
+                            Detection and Identification
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES -->
+        <div class="px-[100px] my-[100px] pt-[100px]" id="SERVICES">
+            <p class="text-[#b32dfd] font-semibold text-lg text-center">WE PROVIDE</p>
+            <h2 class="font-semibold text-4xl mt-1 text-center">SERVICES</h2>
+            <div class="flex justify-center flex-wrap gap-x-20 gap-y-24  pt-[30px]">
+                <a href="./emotion"
+                    class="flex flex-col rounded-xl cursor-pointer p-4 w-[20vw] border border-[#596985] p-3">
+                    <img src='../static/dummy1.svg' alt='' class="rounded-t-xl h-[300px] w-full object-cover" />
+                    <h2 class="font-[600] text-xl my-4">Emotion Detector</h2>
+                </a>
+                <a href="./mask"
+                    class="flex flex-col rounded-xl cursor-pointer p-4 w-[20vw] border border-[#596985] p-3">
+                    <img src='../static/dummy2.svg' alt='' class="rounded-t-xl h-[300px] w-full object-cover" />
+                    <h2 class="font-[600] text-xl my-4">Mask Detector</h2>
+                </a>
+                <a href="./gender"
+                    class="flex flex-col rounded-xl cursor-pointer p-4 w-[20vw] border border-[#596985] p-3">
+                    <img src='../static/dummy3.svg' alt='' class="rounded-t-xl h-[300px] w-full object-cover" />
+                    <h2 class="font-[600] text-xl my-4">Gender Detector</h2>
+                </a>
+            </div>
+        </div>
+
+        <!-- OUR TEAM -->
+        
+        <!-- OUR NEWSLETTER -->
+        <div class="newsletter border-t-[2px] border-t-[#8773CB40] px-[100px] my-[150px] mb-[60px] py-20" id="CONTACT">
+            <p class="text-[#b32dfd] font-semibold text-lg text-center">Any Doubts?</p>
+            <h2 class="font-semibold text-4xl mt-1 text-center">CONTACT US</h2>
+            <div class="contactMe justify-center flex items-center gap-x-3 mt-8">
+                <input type="text"
+                    class="bg-transparent rounded-[30px] py-[12px] px-[16px] w-[500px] text-sm outline-none border-2 shadow border-[#8773CB40]"
+                    placeholder="Your Email">
+                <button class="bg-navButton py-3 px-5">CONTACT</button>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer
+            class=" flex items-center justify-center px-16 border-t-2 border-t-[#8773CB40] mx-10 py-4 font-[300] text-sm">
+            <div>Copyright &copy; 2023 Fantom, All rights reserved.</div>
+            <!-- <div class="font-[300]">Terms and Conditions | Community Guidlines | Privacy Policy</div> -->
+        </footer>
+
+        <!-- {% block content %}
+        {% endblock %} -->
+
+        <footer class="bg-[#0A1830] px-5"></footer>
+
+    </body>
+
+</html>
